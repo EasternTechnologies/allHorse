@@ -12,16 +12,21 @@
   <![endif]-->
   
 
-  <title>Page title</title>
+  <title>All horse</title>
   
 
-  <link rel="stylesheet" href="styles/main.css">
+  <link href="styles/main.css" rel="stylesheet">
 </head>
 
 <body>
   @include('./html/header.html')
 
-  <main class="page-content"></main>
+  <main class="page-content">
+    @include('./html/search.html')
+    @include('./html/vip.html')
+    @include('./html/catalog.html')
+    @include('./html/last.html')
+  </main>
 
   @include('./html/footer.html')
 

@@ -1,0 +1,86 @@
+.register {
+  max-width: rem(502);
+  margin: 0 auto;
+  margin-bottom: rem(40);
+  padding: 0 rem(10);
+  padding-top: rem(15);
+  background: $brown url("../img/general/new-wood-bg.jpg") center no-repeat;
+  background-size: cover;
+  border-radius: 21px;
+  box-shadow: 0 2px 2px 0 rgba(60, 26, 1, 0.35), 0 2px 7px 0 rgba(0, 0, 0, 0.64), inset 0 -3px 0 0 rgba(39, 16, 0, 0.674);
+}
+
+.register .section__title {
+  font-size: rem(64);
+}
+
+.register .section__content {
+  max-width: rem(365);
+  margin: 0 auto;
+  padding-top: rem(10);
+  padding-bottom: rem(35);
+}
+
+// register form
+.register-form__block {
+  margin: 0;
+  margin-bottom: rem(8);
+}
+
+.register-form__field {
+  width: 100%;
+  min-height: rem(50);
+  padding: 0 rem(15);
+  font-family: $latoHeavy;
+  font-size: rem(17);
+  color: $brown;
+  background: $white;
+  border: none;
+  border-radius: 5px;
+}
+
+.register-form__field::placeholder {
+  font-family: $latoItalic;
+  font-size: rem(17);
+  color: $brown;
+  opacity: 0.7;
+}
+
+.register-form__annotation {
+  margin: 0;
+  margin-top: rem(-5);
+  margin-bottom: rem(20);
+  font-family: $latoHeavy;
+  font-size: rem(13);
+  color: $orange;
+}
+
+.register-form__block--private,
+.register-form__block--company {
+  display: inline-flex;
+  align-items: center;
+  width: 49%;
+  min-height: auto;
+}
+
+.register-form__block--private .register-form__field,
+.register-form__block--company .register-form__field {
+  width: rem(22);
+  height: rem(22);
+  margin-right: rem(15);
+}
+
+.register-form__field-private,
+.register-form__field-company {
+  color: $orange;
+}
+
+.register-form__submit {
+  width: 100%;
+  font-size: rem(30);
+  border-radius: 10px;
+
+  @media (max-width: 440px) {
+    font-size: rem(27);
+  }
+}

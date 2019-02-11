@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<![endif]-->
+  <!--[if lt IE 9]>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  <![endif]-->
+
+
+  <title>Продается Донской жеребец</title>
+
+
+  <link href="styles/main.css" rel="stylesheet">
+</head>
+
+<body class="page-news-one">
+  @include('./html/header.html')
+
+  <main class="page-content">
+    <div class="container">
+      <section class="section breadcrumb">
+        <h2 class="visually-hidden">Хлебные крошки сайта</h2>
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__item">
+            <a href="index.html" class="breadcrumb__link">Главная</a>
+          </li>
+          <li class="breadcrumb__item">
+            <a href="catalog.html" class="breadcrumb__link">Объявления</a>
+          </li>
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link">Продается Донской жеребец</a>
+          </li>
+        </ul>
+      </section>
+
+      <div class="page-content__block">
+        @include('./html/product.html')
+        @include('./html/comments.html')
+      </div>
+
+      @include('./html/aside-product.html')
+
+    </div>
+  </main>
+
+  @include('./html/footer.html')
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

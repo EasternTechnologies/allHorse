@@ -1,12 +1,18 @@
 // Colors
-
+$white: #fff1c8;
+$orange: #f28106;
+$brown: #410c00;
 
 // Font-size
-$mainFontSize: 16px;
+$mainFontSize: rem(16);
 
 
 // Font-family
-$mainFont: "myFont", arial, sans-serif;
+$latoItalic: "latoitalic", Arial, sans-serif;
+$latoHeavy: "latoheavy", Arial, sans-serif;
+$latoBold: "latobold", Arial, sans-serif;
+$bernier: "bernier_shaderegular", Arial, sans-serif;
+$nautilus: "nautilus_pompiliusregular", Arial, sans-serif;
 
 
 // Screen sizes
@@ -20,3 +26,8 @@ $breakpoints: (
   "desktop"     : 1248px,
   "desktop-wide": 1440px
 );
+
+
+// Transition
+$linear: all 0.2s linear;
+$easy-in-out: all 0.2s ease-in-out;

@@ -1,0 +1,175 @@
+.login {
+  max-width: rem(502);
+  margin-bottom: rem(40);
+  padding: 0 rem(10);
+  padding-top: rem(15);
+  background: $brown url("../img/general/new-wood-bg.jpg") center no-repeat;
+  background-size: cover;
+  border-radius: 21px;
+  box-shadow: 0 2px 2px 0 rgba(60, 26, 1, 0.35), 0 2px 7px 0 rgba(0, 0, 0, 0.64), inset 0 -3px 0 0 rgba(39, 16, 0, 0.674);
+}
+
+.login .section__title {
+  font-size: rem(75);
+}
+
+.login .section__content {
+  max-width: rem(365);
+  margin: 0 auto;
+  padding-top: rem(0);
+  padding-bottom: rem(20);
+}
+
+// Social form
+.social-form__block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  min-height: rem(60);
+  padding: 0 rem(10);
+  background: #281308;
+  border-radius: 5px;
+  box-shadow: inset -4px 4px 0 0 rgba(11, 5, 1, 0.8);
+}
+
+.social-form__block span {
+  margin-right: rem(9);
+  font-family: $nautilus;
+  font-size: rem(18);
+  color: $orange;
+}
+
+.social-form__submit {
+  width: rem(30);
+  height: rem(30);
+  margin-right: rem(7);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+
+  @media (max-width: 370px) {
+    width: rem(26);
+    height: rem(26);
+  }
+
+  @media (max-width: 340px) {
+    width: rem(23);
+    height: rem(23);
+  }
+}
+
+.social-form__submit:last-child {
+  margin-right: 0;
+}
+
+.dividing {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: rem(15);
+  font-family: $nautilus;
+  font-size: rem(18);
+  font-weight: 400;
+  text-align: center;
+  color: $white;
+  white-space: nowrap;
+}
+
+.dividing::before,
+.dividing::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: $orange;
+}
+
+.dividing::before {
+  margin-right: 13px;
+}
+
+.dividing::after {
+  margin-left: 13px;
+}
+
+
+// Login form
+.login-form__block {
+  margin: 0;
+  margin-bottom: rem(8);
+}
+
+.login-form__field {
+  width: 100%;
+  min-height: rem(50);
+  padding: 0 rem(10);
+  font-family: $latoHeavy;
+  font-size: rem(17);
+  color: $brown;
+  background: $white;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-form__field::placeholder {
+  font-family: $latoItalic;
+  font-size: rem(17);
+  color: $brown;
+  opacity: 0.7;
+}
+
+.login-form__block--remember {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+}
+
+.login-form__block--remember .login-form__field {
+  width: rem(22);
+  height: rem(22);
+  margin-right: rem(14);
+}
+
+.login-form__field-remember {
+  color: $orange;
+}
+
+.login-form__submit {
+  width: 100%;
+  font-size: rem(30);
+  border-radius: 10px;
+
+  @media (max-width: 440px) {
+    font-size: rem(28);
+  }
+}
+
+.login-form__block--more {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login-form__block--more::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: rem(8);
+  height: rem(8);
+  background: $white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-form__link {
+  font-family: $latoHeavy;
+  font-size: rem(15);
+  color: $orange;
+}

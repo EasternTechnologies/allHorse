@@ -1,0 +1,142 @@
+.news-one .section__content {
+  margin-bottom: rem(25);
+  padding: rem(20);
+  padding-top: rem(10);
+  background: $white url("../img/general/catalog-bg.jpg") center repeat;
+  border-radius: 5px;
+}
+
+.news-one__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: rem(10);
+}
+
+.news-one__title {
+  margin: 0;
+  font-family: $nautilus;
+  font-size: rem(36);
+  font-weight: 400;
+}
+
+.news-one__favourite {
+  width: rem(20);
+  height: rem(20);
+  background: $orange;
+  border: none;
+}
+
+.news-one__content {
+  padding: rem(8);
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.news-one__img {
+  width: 100%;
+  margin-bottom: rem(20);
+}
+
+.news-one__text {
+  padding: 0 rem(30);
+  line-height: 1.1;
+}
+
+.news-one__text ul {
+  padding: rem(10) rem(25);
+}
+
+.news-one__text ul li {
+  position: relative;
+  margin-bottom: rem(16);
+  padding-left: rem(20);
+}
+
+.news-one__text ul li::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: rem(10);
+  height: rem(10);
+  background: $brown;
+}
+
+.news-one__text ul li > img {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: rem(25);
+  margin-bottom: rem(25);
+}
+
+.news-one__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.news-one__section,
+.news-one__data {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: rem(22);
+  font-family: $latoHeavy;
+  font-size: rem(13);
+  color: $orange;
+}
+
+.news-one__section {
+  margin-right: rem(10);
+}
+
+.news-one__data::before,
+.news-one__section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: rem(15);
+  height: rem(15);
+  background: $brown;
+  transform: translateY(-50%);
+}
+
+.news-one__data {
+  margin-right: rem(30);
+}
+
+.news-one__social-form {
+  margin-left: auto;
+}
+
+.news-one__social-form .social-form__block {
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.news-one__social-form .social-form__block span {
+  font-family: $latoHeavy;
+  font-size: rem(13);
+}
+
+.news-one__social-form .social-form__submit {
+  width: rem(20);
+  height: rem(20);
+  margin-right: rem(4);
+}
+
+.news-one__social-form .social-form__submit:last-child {
+  margin-right: 0;
+}
+
+.news-one .pagination__link {
+  width: auto;
+  padding: 0 rem(10);
+}

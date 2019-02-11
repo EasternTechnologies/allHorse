@@ -1,0 +1,97 @@
+<section class="section comments">
+  <h2 class="section__title">Комментарии</h2>
+
+  <div class="section__content">
+    <div class="comments__form">
+      <form class="comments-form">
+        <div class="comments-form__block-wrapper comments-form__block-wrapper--inputs">
+          <p class="comments-form__block">
+            <input class="comments-form__field" id="comments-form__login" name="login" type="text" placeholder="Имя">
+            <label class="comments-form__field-title visually-hidden" for="comments-form__login">Введите свое имя</label>
+          </p>
+          <p class="comments-form__block">
+            <input class="comments-form__field" id="comments-form__email" name="mail" type="email" placeholder="E-mail">
+            <label class="comments-form__field-title visually-hidden" for="comments-form__email">Введите свой емэйл</label>
+          </p>
+        </div>
+
+        <div class="comments-form__block-wrapper comments-form__block-wrapper--text">
+          <p class="comments-form__block">
+            <textarea class="comments-form__field" id="comments-form__text" name="text" placeholder="Сообщение..."></textarea>
+            <label class="comments-form__field-title visually-hidden" for="comments-form__text">Введите свой текст сообщения</label>
+          </p>
+        </div>
+
+        <div class="comments-form__block-wrapper comments-form__block-wrapper--submit">
+          <p class="comments-form__block">
+            <button class="comments-form__submit btn" type="submit">Отправить</button>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <div class="comments__block">
+      <ul class="comments__list">
+        <li class="comments__item">
+          <article class="comment">
+            <div class="comment__author">
+              <span class="comment__author-icon">М</span>
+              <span class="comment__author-name">Мария</span>
+            </div>
+            <div class="comment__content">
+              <div class="comment__info">
+                <p class="comment__data">
+                  <time datetime="2018.04.19">19.04.2018</time>
+                </p>
+                <p class="comment__reviews">1</p>
+                <p class="comment__likes">8</p>
+              </div>
+              <p>Конь - красавчик! Как забрать коняшку? Вы предоставите коневоз, или мне придется приезжать со своим? и где конкретно вы находитесь в Любиме? На карте не указано...</p>
+            </div>
+          </article>
+        </li>
+        <li class="comments__item">
+          <ul class="comments__sublist">
+            <li class="comments__subitem">
+              <article class="comment">
+                <div class="comment__author">
+                  <span class="comment__author-icon">А</span>
+                  <span class="comment__author-name">Андрей</span>
+                </div>
+                <div class="comment__content">
+                  <div class="comment__info">
+                    <p class="comment__data">
+                      <time datetime="2018.04.19">19.04.2018</time>
+                    </p>
+                    <p class="comment__reviews"></p>
+                    <p class="comment__likes">2</p>
+                  </div>
+                  <p>Насчет коневоза. Он есть, и я сам перевезу коня. Только вам надо будет подъехать, чтобы увидеться и все обсудить. Точный адрес - только в личной переписке.</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </li>
+        <li class="comments__item">
+          <article class="comment">
+            <div class="comment__author">
+              <span class="comment__author-icon">К</span>
+              <span class="comment__author-name">Ксения</span>
+            </div>
+            <div class="comment__content">
+              <div class="comment__info">
+                <p class="comment__data">
+                  <time datetime="2018.04.18">18.04.2018</time>
+                </p>
+                <p class="comment__reviews"></p>
+                <p class="comment__likes">1</p>
+              </div>
+              <p>Какой красивый конь! Прям как будто из золота. Что-то маленькая цена для такой лошади. Ему цена не меньше 500 000 рублей. Элитный коняша! </p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</section>

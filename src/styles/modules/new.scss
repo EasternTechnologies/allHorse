@@ -1,0 +1,170 @@
+.new {
+  max-width: rem(775);
+  margin: 0 auto;
+  margin-bottom: rem(30);
+  padding: 0 rem(10);
+  padding-top: rem(20);
+  background: $brown url("../img/general/new-wood-bg.jpg") center no-repeat;
+  background-size: cover;
+  border-radius: 21px;
+  box-shadow: 0 2px 2px 0 rgba(60, 26, 1, 0.35), 0 2px 7px 0 rgba(0, 0, 0, 0.64), inset 0 -3px 0 0 rgba(39, 16, 0, 0.674);
+}
+
+.new .section__content {
+  max-width: rem(575);
+  margin: 0 auto;
+  padding-top: rem(10);
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+fieldset:not(:last-child) {
+  margin-bottom: rem(25);
+}
+
+legend {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: rem(15);
+  font-family: $nautilus;
+  font-size: rem(27);
+  font-weight: 400;
+  text-align: center;
+  color: $white;
+  white-space: nowrap;
+}
+
+legend::before,
+legend::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: $orange;
+}
+
+legend::before {
+  margin-right: 13px;
+}
+
+legend::after {
+  margin-left: 13px;
+}
+
+.new-form__block-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-form__block {
+  margin: 0;
+  margin-bottom: rem(8);
+}
+
+.new-form__field {
+  width: 100%;
+  min-height: rem(50);
+  padding: 0 rem(10);
+  font-family: $latoHeavy;
+  font-size: rem(17);
+  color: $brown;
+  background: $white;
+  border: none;
+  border-radius: 5px;
+}
+
+.new-form__field::placeholder {
+  font-family: $latoItalic;
+  font-size: rem(17);
+  color: $brown;
+  opacity: 0.7;
+}
+
+.new-form__block--text {
+  height: rem(130);
+}
+
+.new-form__block--text .new-form__field {
+  height: rem(130);
+  padding: rem(10);
+}
+
+.new-form__block--category {
+  width: 44.5%;
+}
+
+.new-form__block--price {
+  width: 34.5%;
+
+  @media (max-width: 460px) {
+    width: 28.5%;
+  }
+}
+
+.new-form__block--currency {
+  width: 18%;
+
+  @media (max-width: 460px) {
+    width: 23.5%;
+  }
+}
+
+.new-form__block--file {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: rem(60);
+  background: #281308;
+  border-radius: 5px;
+  box-shadow: inset -4px 4px 0 0 rgba(11, 5, 1, 0.8);
+}
+
+.new-form__block--file span {
+  margin-left: rem(14);
+  font-family: $nautilus;
+  font-size: rem(18);
+  color: $orange;
+}
+
+.new-form__block--file .btn {
+  max-width: rem(121);
+  min-height: rem(40);
+  margin-right: rem(17);
+  margin-left: auto;
+  font-size: rem(18);
+}
+
+.new-form__block--country {
+  width: 44.5%;
+}
+
+.new-form__block--region {
+  width: 54%;
+}
+
+.new-form__block--city {
+  width: 33.5%;
+}
+
+.new-form__block--address {
+  width: 65%;
+}
+
+.new-form__block--submit {
+  text-align: center;
+}
+
+.new-form__block--submit .btn {
+  max-width: rem(364);
+  margin-top: rem(-10);
+  font-size: rem(30);
+  border-radius: 10px;
+}
