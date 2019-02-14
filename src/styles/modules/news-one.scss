@@ -21,11 +21,9 @@
   font-weight: 400;
 }
 
-.news-one__favourite {
+.news-one__favourites .favourites-form__field-title {
   width: rem(20);
   height: rem(20);
-  background: $orange;
-  border: none;
 }
 
 .news-one__content {
@@ -61,7 +59,7 @@
   left: 0;
   width: rem(10);
   height: rem(10);
-  background: $brown;
+  background: transparent url("../img/svg/clever.svg") center/contain no-repeat;
 }
 
 .news-one__text ul li > img {
@@ -101,8 +99,24 @@
   left: 0;
   width: rem(15);
   height: rem(15);
-  background: $brown;
   transform: translateY(-50%);
+}
+
+.news-one__data::before {
+  background: transparent url("../img/svg/calendar.svg") center/contain no-repeat;
+}
+
+.news-one__section--transport::before {
+  background: transparent url("../img/svg/transport.svg") center/contain no-repeat;
+}
+.news-one__section--market::before {
+  background: transparent url("../img/svg/market.svg") center/contain no-repeat;
+}
+.news-one__section--services::before {
+  background: transparent url("../img/svg/services.svg") center/contain no-repeat;
+}
+.news-one__section--equipment::before {
+  background: transparent url("../img/svg/equipment.svg") center/contain no-repeat;
 }
 
 .news-one__data {
@@ -130,6 +144,31 @@
   width: rem(20);
   height: rem(20);
   margin-right: rem(4);
+}
+
+.social-form__submit--google {
+    background: transparent url("../img/svg/google.svg") center/contain no-repeat;
+}
+.social-form__submit--facebook {
+    background: transparent url("../img/svg/fb.svg") center/contain no-repeat;
+}
+.social-form__submit--linkedin {
+    background: transparent url("../img/svg/in.svg") center/contain no-repeat;
+}
+.social-form__submit--twitter {
+    background: transparent url("../img/svg/tw.svg") center/contain no-repeat;
+}
+.social-form__submit--odnoklassniki {
+    background: transparent url("../img/svg/odnoklassniki.svg") center/contain no-repeat;
+}
+.social-form__submit--vkontakte {
+    background: transparent url("../img/svg/vk.svg") center/contain no-repeat;
+}
+.social-form__submit--instagram {
+    background: transparent url("../img/svg/inst.svg") center/contain no-repeat;
+}
+.social-form__submit--mail {
+    background: transparent url("../img/svg/mail.svg") center/contain no-repeat;
 }
 
 .news-one__social-form .social-form__submit:last-child {

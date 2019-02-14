@@ -40,29 +40,6 @@
   background: $brown;
 }
 
-.menu__toggle {
-  position: relative;
-  z-index: 100;
-  display: none;
-  width: rem(25);
-  height: 20px;
-  margin-left: auto;
-
-  @media (max-width: 1170px) {
-    display: block;
-  }
-}
-
-.menu__toggle::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: rem(3);
-  margin-bottom: rem(20);
-  box-shadow: 0 2px 0 0 rgba(255, 255, 255, 1),
-  0 9px 0 0 rgba(255, 255, 255, 1),
-  0 16px 0 0 rgba(255, 255, 255, 1);
-}
 
 // Nav
 .menu__nav {
@@ -123,6 +100,10 @@
   overflow: hidden;
 }
 
+.menu-form__block {
+  position: relative;
+}
+
 .menu-form__field {
   padding-right: rem(35);
   padding-left: rem(20);
@@ -143,14 +124,43 @@
   opacity: 0.5;
 }
 
+.menu-form__submit {
+  position: absolute;
+  padding: 0;
+  width: rem(20);
+  height: rem(20);
+  top: 50%;
+  transform: translateY(-50%);
+  right: rem(10);
+  background: transparent url("../img/svg/search.svg") center no-repeat;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+}
+
 
 // Login
 .menu-login__link {
-  display: block;
+  position: relative;
+  padding-right: rem(40);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   font-family: $nautilus;
   font-size: rem(24);
   color: $white;
   transition: $easy-in-out;
+}
+
+.menu-login__link::after {
+  position: absolute;
+  content: "";
+  width: rem(30);
+  height:rem(30);
+  background: transparent url("../img/svg/login.svg") center/contain no-repeat;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
 
 .nav__link.active,

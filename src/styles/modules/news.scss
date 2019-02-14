@@ -100,8 +100,24 @@
   left: 0;
   width: rem(15);
   height: rem(15);
-  background: $brown;
   transform: translateY(-50%);
+}
+
+.news-item__data::before {
+  background: transparent url("../img/svg/calendar.svg") center/contain no-repeat;
+}
+
+.news-item__section--transport::before {
+  background: transparent url("../img/svg/transport.svg") center/contain no-repeat;
+}
+.news-item__section--market::before {
+  background: transparent url("../img/svg/market.svg") center/contain no-repeat;
+}
+.news-item__section--services::before {
+  background: transparent url("../img/svg/services.svg") center/contain no-repeat;
+}
+.news-item__section--equipment::before {
+  background: transparent url("../img/svg/equipment.svg") center/contain no-repeat;
 }
 
 .news-item__data {
