@@ -174,7 +174,7 @@ textarea.comments-form__field {
   left: 0;
   width: rem(15);
   height: rem(15);
-  background: $orange;
+  background: transparent url("../img/svg/calendar-orange.svg") center/contain no-repeat;
   transform: translateY(-50%);
 }
 
@@ -226,9 +226,9 @@ textarea.comments-form__field {
 }
 
 .like-form__field-title {
-  cursor: pointer;
   display: block;
   width: rem(18);
   height: rem(18);
   background: transparent url("../img/svg/heart-empty.svg") center/contain no-repeat;
+  cursor: pointer;
 }

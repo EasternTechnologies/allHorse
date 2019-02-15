@@ -1,5 +1,6 @@
 $(document).ready(function() {
   svg4everybody({});
+
   // Mobile menu
   var toggle = $('.menu__toggle');
   var menu = $('.menu');
@@ -7,6 +8,7 @@ $(document).ready(function() {
 
 toggle.on('click', function(){
   menu.toggleClass('active');
+  $(this).toggleClass('active');
 })
 
   // Slider
