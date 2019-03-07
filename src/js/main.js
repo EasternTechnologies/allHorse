@@ -1,13 +1,14 @@
 $(document).ready(function() {
   svg4everybody({});
+
   // Mobile menu
   var toggle = $('.menu__toggle');
   var menu = $('.menu');
-  var body =$('body');
+  var body = $('body');
 
-toggle.on('click', function(){
-  menu.toggleClass('active');
-})
+  toggle.on('click', function() {
+    menu.toggleClass('active');
+  })
 
   // Slider
   $('.slider-single').slick({
@@ -25,8 +26,7 @@ toggle.on('click', function(){
     arrows: false,
     centerMode: false,
     focusOnSelect: true,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 600,
         settings: {
           slidesToShow: 3,
