@@ -5,7 +5,12 @@
     <div class="news-one__item">
       <header class="news-one__header">
         <h3 class="news-one__title">Интересное о лошадях</h3>
-        <button class="news-one__favourite"></button>
+        <div class="news-one__favourites">
+          <form class="favourites-form">
+            <input class="favourites-form__field visually-hidden" id="favourites22" name="favourites" type="checkbox">
+            <label class="favourites-form__field-title" for="favourites22" aria-label="Добавить в избранное / Удалить из избранного" tabindex="0"></label>
+          </form>
+        </div>
       </header>
       <div class="news-one__content">
         <div class="news-one__img">
@@ -79,16 +84,16 @@
 
         <footer class="news-one__footer">
           <p class="news-one__data">
-            <time datetime="2018.04.18">18.04.2018</time>
+            <time datetime="2018-04-18">18.04.2018</time>
           </p>
 
-          <p class="news-one__section">Конный рынок</p>
+          <p class="news-one__section news-one__section--market">Конный рынок</p>
 
           <div class="news-one__social-form">
             <form class="social-form">
               <p class="social-form__block">
                 <span>Поделиться:</span>
-                <button class="social-form__submit social-form__submit--google+" type="submit" aria-label="Войти через google+"></button>
+                <button class="social-form__submit social-form__submit--google" type="submit" aria-label="Войти через google+"></button>
 
                 <button class="social-form__submit social-form__submit--facebook" type="submit" aria-label="Войти через facebook"></button>
 

@@ -124,8 +124,20 @@
   left: 50%;
   width: rem(40);
   height: rem(30);
-  background: $brown;
   transform: translateX(-50%);
+}
+
+.news-catalog__link--transport::before {
+  background: transparent url("../img/svg/transport.svg") center/contain no-repeat;
+}
+.news-catalog__link--market::before {
+  background: transparent url("../img/svg/market.svg") center/contain no-repeat;
+}
+.news-catalog__link--services::before {
+  background: transparent url("../img/svg/services.svg") center/contain no-repeat;
+}
+.news-catalog__link--equipment::before {
+  background: transparent url("../img/svg/equipment.svg") center/contain no-repeat;
 }
 
 
@@ -155,7 +167,7 @@
   left: 0;
   width: rem(16);
   height: rem(20);
-  background: $brown;
+  background: transparent url("../img/svg/document.svg") center/contain no-repeat;
   transform: translateY(-50%);
 }
 
@@ -179,7 +191,7 @@
   left: 0;
   width: rem(35);
   height: rem(40);
-  background: $orange;
+  background: transparent url("../img/svg/money.svg") center/contain no-repeat;
   transform: translateY(-50%);
 }
 
@@ -215,8 +227,15 @@
   left: 0;
   width: rem(17);
   height: rem(20);
-  background: $orange;
   transform: translateY(-50%);
+}
+
+.seller__name::before {
+  background: transparent url("../img/svg/user.svg") center/contain no-repeat;
+}
+
+.seller__phone::before {
+  background: transparent url("../img/svg/phone.svg") center/contain no-repeat;
 }
 
 .seller__status {

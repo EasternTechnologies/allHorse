@@ -174,7 +174,7 @@ textarea.comments-form__field {
   left: 0;
   width: rem(15);
   height: rem(15);
-  background: $orange;
+  background: transparent url("../img/svg/calendar-orange.svg") center/contain no-repeat;
   transform: translateY(-50%);
 }
 
@@ -190,7 +190,10 @@ textarea.comments-form__field {
   color: $orange;
 }
 
-.comment__likes::after,
+.comment__likes {
+  padding-right: 0;
+}
+
 .comment__reviews::after {
   content: "";
   position: absolute;
@@ -198,8 +201,11 @@ textarea.comments-form__field {
   right: 0;
   width: rem(22);
   height: rem(15);
-  background: $orange;
   transform: translateY(-50%);
+}
+
+.comment__reviews::after {
+  background: transparent url("../img/svg/message.svg") center/contain no-repeat;
 }
 
 .comment__info .comment__reviews {
@@ -209,4 +215,20 @@ textarea.comments-form__field {
 
 .comment__content p {
   margin: 0;
+}
+
+.like-form {
+  margin-left: rem(7);
+}
+
+.like-form__field:checked + .like-form__field-title {
+  background: transparent url("../img/svg/heart.svg") center/contain no-repeat;
+}
+
+.like-form__field-title {
+  display: block;
+  width: rem(18);
+  height: rem(18);
+  background: transparent url("../img/svg/heart-empty.svg") center/contain no-repeat;
+  cursor: pointer;
 }

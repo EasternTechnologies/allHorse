@@ -200,7 +200,7 @@
   left: 0;
   width: rem(23);
   height: rem(15);
-  background: $orange;
+  background: transparent url("../img/svg/folder.svg") center/contain no-repeat;
   transform: translateY(-50%);
 }
 
@@ -240,7 +240,7 @@
   right: 0;
   width: rem(18);
   height: rem(14);
-  background: $orange;
+  background: transparent url("../img/svg/eye.svg") center/contain no-repeat;
   transform: translateY(-50%);
 }
 
@@ -276,8 +276,11 @@
   left: 0;
   width: rem(15);
   height: rem(15);
-  background: $orange;
   transform: translateY(-50%);
+}
+
+.product__address::before {
+  background: transparent url("../img/svg/marker.svg") center/contain no-repeat;
 }
 
 .product__address {

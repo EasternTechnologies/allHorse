@@ -36,3 +36,11 @@
 .breadcrumb__link:not([href]) {
   color: $white;
 }
+
+.breadcrumb__link--home {
+  display: block;
+  width: rem(13);
+  height: rem(13);
+  margin-bottom: 1px;
+  background: transparent url("../img/svg/home.svg") center/contain no-repeat;
+}

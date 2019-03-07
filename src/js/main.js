@@ -6,9 +6,10 @@ $(document).ready(function() {
   var menu = $('.menu');
   var body = $('body');
 
-  toggle.on('click', function() {
-    menu.toggleClass('active');
-  })
+toggle.on('click', function(){
+  menu.toggleClass('active');
+  $(this).toggleClass('active');
+})
 
   // Slider
   $('.slider-single').slick({

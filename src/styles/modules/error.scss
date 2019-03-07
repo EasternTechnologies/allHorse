@@ -4,7 +4,6 @@
 
 .page-error .page-content .container {
   display: flex;
-  flex-direction: column;
   min-height: 100%;
 }
 
@@ -18,6 +17,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
 
   @media (max-height: 600px) {
     margin: rem(30);
