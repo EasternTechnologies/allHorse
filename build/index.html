@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<![endif]-->
+  <!--[if lt IE 9]>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  <![endif]-->
+  
+
+  <title>All horse</title>
+  
+
+  <link href="styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header">
+  <div class="container">
+    <div class="page-header__logo logo">
+      <a class="logo__link" href="index.html">
+        <img src="img/content/header-logo.png" alt="Логотип компании (Две головы лошадей)">
+      </a>
+    </div>
+
+    <a href="#" class="menu__toggle" aria-label="Показать/скрыть мобильное меню">Меню</a>
+
+    <div class="page-header__menu menu">      
+      <div class="menu__nav">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link active" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="news.html">Конный мир</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">Объявления</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="new.html">Подать объявление</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="menu__search">
+        <div class="menu-form__wrap">
+          <form class="menu-form">
+            <p class="menu-form__block">
+              <input class="menu-form__field" id="menu-search" name="search" type="search" placeholder="Поиск...">
+              <label class="menu-form__title visually-hidden" for="menu-search">Поиск по сайту</label>
+
+              <button class="menu-form__submit" aria-label="Искать">
+              </button>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="menu__login menu-login">
+        <a class="menu-login__link" href="login.html">Войти</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <main class="page-content">
+    <section class="section search">
+  <div class="container">
+    <h2 class="section__title visually-hidden">Поиск по сайту</h2>
+    <div class="section__content search-form__wrapper">
+      <form class="search-form">
+        <p class="search-form__block">
+          <input class="search-form__field" id="search-form__word" name="word" type="text" placeholder="Слово...">
+          <label class="search-form__field-title visually-hidden" for="search-form__word">Введите слово для поиска</label>
+        </p>
+
+        <p class="search-form__block">
+          <select class="search-form__field" id="search-form__category" name="category">
+            <option value="">Категория</option>
+            <option value="market">Конный рынок</option>
+            <option value="equipment">Снаряжение</option>
+            <option value="services">Услуги</option>
+          </select>
+          <label class="search-form__field-title" for="search-form__category"></label>
+        </p>
+
+        <p class="search-form__block">
+          <select class="search-form__field" id="search-form__city" name="city">
+            <option value="">Город</option>
+            <option value="Minsk">Минск</option>
+            <option value="Moscow">Москва</option>
+            <option value="Kiev">Киев</option>
+          </select>
+          <label class="search-form__field-title" for="search-form__city"></label>
+        </p>
+
+        <p class="search-form__block search-form__block-submit">
+          <button class="search-form__submit btn" type="submit">Искать</button>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+    <section class="section vip">
+  <h2 class="section__title">Премиум объявления</h2>
+  <div class="container">
+    <div class="section__content">
+      <ul class="products__list">
+        <li class="products__item product-item">
+          <a class="product-item__link" href="#">
+            <h3 class="product-item__title">Донский жеребец</h3>
+
+            <div class="product-item__img">
+              <img src="img/content/product1.jpg" alt="Донский жеребец">
+            </div>
+          </a>
+
+          <p class="product-item__price">120 000 руб</p>
+
+          <div class="product-item__info">
+            <p class="product-item__data">
+              <time datetime="2018-04-18">18.04.2018</time>
+            </p>
+            <p class="product-item__section product-item__section--market">Конный рынок</p>
+            <div class="product-item__favourites">
+              <form class="favourites-form">
+                <input class="favourites-form__field visually-hidden" id="favourites20" name="favourites" type="checkbox">
+                <label class="favourites-form__field-title" for="favourites20" aria-label="Добавить в избранное / Удалить из избранного" tabindex="0"></label>
+              </form>
+            </div>
+          </div>
+        </li>
+
+        <li class="products__item product-item">
+          <a class="product-item__link" href="#">
+            <h3 class="product-item__title">Ахалтекинец
+            </h3>
+
+            <div class="product-item__img">
+              <img src="img/content/product2.jpg" alt="Ахалтекинец">
+            </div>
+          </a>
+
+          <p class="product-item__price">900 000 руб</p>
+
+          <div class="product-item__info">
+            <p class="product-item__data">
+              <time datetime="2018-04-20">20.04.2018</time>
+            </p>
+            <p class="product-item__section product-item__section--market">Конный рынок</p>
+            <div class="product-item__favourites">
+              <form class="favourites-form">
+                <input class="favourites-form__field visually-hidden" id="favourites21" name="favourites" type="checkbox">
+                <label class="favourites-form__field-title" for="favourites21" aria-label="Добавить в избранное / Удалить из избранного" tabindex="0"></label>
+              </form>
+            </div>
+          </div>
+        </li>
+
+        <li class="products__item product-item">
+          <a class="product-item__link" href="#">
+            <h3 class="product-item__title">Седла «Всадник»</h3>
+
+            <div class="product-item__img">
+              <img src="img/content/product3.jpg" alt="Седла «Всадник»">
+            </div>
+          </a>
+
+          <p class="product-item__price">40 000 руб</p>
+
+          <div class="product-item__info">
+            <p class="product-item__data">
+              <time datetime="2018-04-21">21.04.2018</time>
+            </p>
+            <p class="product-item__section product-item__section--equipment">Снаряжение</p>
+            <div class="product-item__favourites">
+              <form class="favourites-form">
+                <input class="favourites-form__field visually-hidden" id="favourites22" name="favourites" type="checkbox">
+                <label class="favourites-form__field-title" for="favourites22" aria-label="Добавить в избранное / Удалить из избранного" tabindex="0"></label>
+              </form>
+            </div>
+          </div>
+        </li>
+
+        <li class="products__item product-item">
+          <a class="product-item__link" href="#">
+            <h3 class="product-item__title">Коневоз в отличном...</h3>
+
+            <div class="product-item__img">
+              <img src="img/content/product4.jpg" alt="Коневоз в отличном...">
+            </div>
+          </a>
+
+          <p class="product-item__price">340 000 руб</p>
+
+          <div class="product-item__info">
+            <p class="product-item__data">
+              <time datetime="2018-04-21">21.04.2018</time>
+            </p>
+            <p class="product-item__section product-item__section--transport">Транспорт</p>
+            <div class="product-item__favourites">
+              <form class="favourites-form">
+                <input class="favourites-form__field visually-hidden" id="favourites23" name="favourites" type="checkbox">
+                <label class="favourites-form__field-title" for="favourites23" aria-label="Добавить в избранное / Удалить из избранного" tabindex="0"></label>
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <a class="btn" href="#">Разместить объявление</a>
+    </div>
+  </div>
+</section>
+
+    <section class="section catalog">
+  <h2 class="section__title">Каталог</h2>
+  <div class="container">
+    <div class="section__content">
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <a class="catalog__link btn" href="#">Конный рынок</a>
+          <ul class="catalog__sublist">
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Племенные
+                <span class="catalog__sublink-count">12</span>
+              </a>
+            </li>
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Верховые
+                <span class="catalog__sublink-count">20</span>
+              </a>
+            </li>
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Спортивные
+                <span class="catalog__sublink-count">8</span>
+              </a>
+            </li>
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Упряжные
+                <span class="catalog__sublink-count">4</span>
+              </a>
+            </li>
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Сельскохозяйственные
+                <span class="catalog__sublink-count">2</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="catalog__item">
+          <a class="catalog__link btn" href="#">Снаряжение</a>
+          <ul class="catalog__sublist">
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Бинты и ногавки
+                <span class="catalog__sublink-count">12</span>
+              </a>
+            </li>
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Попоны,вальтрапы...
+                <span class="catalog__sublink-count">20</span>
+              </a>
+            </li>
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Недоуздки,уздечки
+                <span class="catalog__sublink-count">8</span>
+              </a>
+            </li>
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Седла и принадлеж...
+                <span class="catalog__sublink-count">4</span>
+              </a>
+            </li>
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Чумбура,корды,хлы...
+                <span class="catalog__sublink-count">2</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="catalog__item">
+          <a class="catalog__link btn" href="#">Транспорт</a>
+          <ul class="catalog__sublist">
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Коневозы
+                <span class="catalog__sublink-count">12</span>
+              </a>
+            </li>
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Трельеры
+                <span class="catalog__sublink-count">20</span>
+              </a>
+            </li>
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Сани
+                <span class="catalog__sublink-count">8</span>
+              </a>
+            </li>
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Брички
+                <span class="catalog__sublink-count">4</span>
+              </a>
+            </li>
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Гужевый транспорт
+                <span class="catalog__sublink-count">2</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="catalog__item">
+          <a class="catalog__link btn" href="#">Услуги</a>
+          <ul class="catalog__sublist">
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Постой лошадей
+                <span class="catalog__sublink-count">12</span>
+              </a>
+            </li>
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Кузнецы-ковали
+                <span class="catalog__sublink-count">20</span>
+              </a>
+            </li>
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Берейторы
+                <span class="catalog__sublink-count">8</span>
+              </a>
+            </li>
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Ветеренары
+                <span class="catalog__sublink-count">4</span>
+              </a>
+            </li>
+            <li class="catalog__subitem">
+              <a class="catalog__sublink" href="#">
+                Тренеры для лошадей
+                <span class="catalog__sublink-count">2</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <section class="section last">
+  <h2 class="section__title">Последние объявления</h2>
+  <div class="container">
+    <div class="section__content">
+      <ul class="products__list">
+        <li class="products__item product-item">
+          <a class="product-item__link" href="#">
+            <h3 class="product-item__title">Заездка лошадей</h3>
+
+            <div class="product-item__img">
+              <img src="img/content/product5.jpg" alt="Заездка лошадей">
+            </div>
+          </a>
+
+          <p class="product-item__price">5 000 руб</p>
+
+          <div class="product-item__info">
+            <p class="product-item__data">
+              <time datetime="2018-04-20">20.04.2018</time>
+            </p>
+            <p class="product-item__section product-item__section--services">Услуги</p>
+            <div class="product-item__favourites">
+              <form class="favourites-form">
+                <input class="favourites-form__field visually-hidden" id="favourites30" name="favourites" type="checkbox">
+                <label class="favourites-form__field-title" for="favourites30" aria-label="Добавить в избранное / Удалить из избранного" tabindex="0"></label>
+              </form>
+            </div>
+          </div>
+        </li>
+
+        <li class="products__item product-item">
+          <a class="product-item__link" href="#">
+            <h3 class="product-item__title">Лузитанский красавец</h3>
+
+            <div class="product-item__img">
+              <img src="img/content/product6.jpg" alt="Лузитанский красавец">
+            </div>
+          </a>
+
+          <p class="product-item__price">500 000 руб</p>
+
+          <div class="product-item__info">
+            <p class="product-item__data">
+              <time datetime="2018-04-24">24.04.2018</time>
+            </p>
+            <p class="product-item__section product-item__section--market">Конный рынок</p>
+            <div class="product-item__favourites">
+              <form class="favourites-form">
+                <input class="favourites-form__field visually-hidden" id="favourites31" name="favourites" type="checkbox">
+                <label class="favourites-form__field-title" for="favourites31" aria-label="Добавить в избранное / Удалить из избранного" tabindex="0"></label>
+              </form>
+            </div>
+          </div>
+        </li>
+
+        <li class="products__item product-item">
+          <a class="product-item__link" href="#">
+            <h3 class="product-item__title">Трейлеры для лошадей</h3>
+
+            <div class="product-item__img">
+              <img src="img/content/product7.jpg" alt="Трейлеры для лошадей">
+            </div>
+          </a>
+
+          <p class="product-item__price">8 000 руб</p>
+
+          <div class="product-item__info">
+            <p class="product-item__data">
+              <time datetime="2018-04-21">21.04.2018</time>
+            </p>
+            <p class="product-item__section product-item__section--equipment">Снаряжение</p>
+            <div class="product-item__favourites">
+              <form class="favourites-form">
+                <input class="favourites-form__field visually-hidden" id="favourites32" name="favourites" type="checkbox">
+                <label class="favourites-form__field-title" for="favourites32" aria-label="Добавить в избранное / Удалить из избранного" tabindex="0"></label>
+              </form>
+            </div>
+          </div>
+        </li>
+
+        <li class="products__item product-item">
+          <a class="product-item__link" href="#">
+            <h3 class="product-item__title">Коневоз в отличном...</h3>
+
+            <div class="product-item__img">
+              <img src="img/content/product8.jpg" alt="Коневоз в отличном...">
+            </div>
+          </a>
+
+          <p class="product-item__price">1 000 000 руб</p>
+
+          <div class="product-item__info">
+            <p class="product-item__data">
+              <time datetime="2018-04-21">21.04.2018</time>
+            </p>
+            <p class="product-item__section product-item__section--transport">Транспорт</p>
+            <div class="product-item__favourites">
+              <form class="favourites-form">
+                <input class="favourites-form__field visually-hidden" id="favourites33" name="favourites" type="checkbox">
+                <label class="favourites-form__field-title" for="favourites33" aria-label="Добавить в избранное / Удалить из избранного" tabindex="0"></label>
+              </form>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <a class="btn" href="#">Разместить объявление</a>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="page-footer">
+  <div class="container">
+    <div class="page-footer__logo logo">
+      <a class="logo__link" href="index.html">
+        <img src="img/content/header-logo.png" alt="Логотип компании (Две головы лошадей)">
+      </a>
+    </div>
+
+    <div class="page-footer__socials">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a href="#" class="socials__link" aria-label="facebook"></a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link" aria-label="twitter"></a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link" aria-label="vkontakte"></a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link" aria-label="google+"></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="page-footer__developed">
+      <p><a href="http://east-tech.by/"><img src="img/content/east-tech-logo.png" alt="Логотип компании 'Восточные технологии'">Восточные технологии</a><span> - разработка и дизайн</span> </p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

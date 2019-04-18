@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<![endif]-->
+  <!--[if lt IE 9]>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  <![endif]-->
+
+
+  <title>Разместить объявление</title>
+
+
+  <link href="styles/main.css" rel="stylesheet">
+</head>
+
+<body class="page-new">
+  <header class="page-header">
+  <div class="container">
+    <div class="page-header__logo logo">
+      <a class="logo__link" href="index.html">
+        <img src="img/content/header-logo.png" alt="Логотип компании (Две головы лошадей)">
+      </a>
+    </div>
+
+    <a href="#" class="menu__toggle" aria-label="Показать/скрыть мобильное меню">Меню</a>
+
+    <div class="page-header__menu menu">      
+      <div class="menu__nav">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link active" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="news.html">Конный мир</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">Объявления</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="new.html">Подать объявление</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="menu__search">
+        <div class="menu-form__wrap">
+          <form class="menu-form">
+            <p class="menu-form__block">
+              <input class="menu-form__field" id="menu-search" name="search" type="search" placeholder="Поиск...">
+              <label class="menu-form__title visually-hidden" for="menu-search">Поиск по сайту</label>
+
+              <button class="menu-form__submit" aria-label="Искать">
+              </button>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="menu__login menu-login">
+        <a class="menu-login__link" href="login.html">Войти</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <main class="page-content">
+    <div class="container">
+      <section class="section breadcrumb">
+        <h2 class="visually-hidden">Хлебные крошки сайта</h2>
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__item">
+            <a href="index.html" class="breadcrumb__link breadcrumb__link--home" aria-label="Главная"></a>
+          </li>
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link">Разместить объявление</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section new">
+  <h1 class="section__title section__title--no-img">Разместить объявление</h1>
+  <div class="section__content">
+    <div class="new__form">
+      <form class="new-form">
+        <fieldset>
+          <legend>Общая информация</legend>
+          <p class="new-form__block">
+            <input class="new-form__field" id="new-form__title" name="title" type="text" placeholder="Заголовок">
+            <label class="new-form__field-title visually-hidden" for="new-form__title">Введите заголовок статьи</label>
+          </p>
+          <p class="new-form__block new-form__block--text">
+            <textarea class="new-form__field" id="new-form__text" name="text" placeholder="Описание"></textarea>
+            <label class="new-form__field-title visually-hidden" for="new-form__text">Введите основной текст статьи</label>
+          </p>
+          <div class="new-form__block-wrapper">
+            <p class="new-form__block new-form__block--category">
+              <select class="new-form__field" id="new-form__category" name="category">
+                <option value="">Категория</option>
+                <option value="market">Конный рынок</option>
+                <option value="equipment">Снаряжение</option>
+                <option value="services">Услуги</option>
+              </select>
+              <label class="new-form__field-title visually-hidden" for="new-form__category">Выберите категорию</label>
+            </p>
+            <p class="new-form__block new-form__block--price">
+              <input class="new-form__field" id="new-form__price" name="price" type="text" placeholder="Цена">
+              <label class="new-form__field-title visually-hidden" for="new-form__price">Введите цену</label>
+            </p>
+            <p class="new-form__block new-form__block--currency">
+              <select class="new-form__field" id="new-form__currency" name="currency">
+                <option value="BYN">BYN</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+              </select>
+              <label class="new-form__field-title visually-hidden" for="new-form__currency">Выберите валюту</label>
+            </p>
+            <p class="new-form__block new-form__block--file">
+              <span>Перетащите или загрузите фото с компьютера</span>
+              <input class="new-form__field visually-hidden" id="new-form__price-from" name="price-from" type="file">
+              <label class="new-form__field-title btn" for="new-form__price-from">Загрузить</label>
+            </p>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Месторасположение</legend>
+          <div class="new-form__block-wrapper">
+            <p class="new-form__block new-form__block--country">
+              <select class="new-form__field" id="new-form__country" name="country">
+                <option value="">Страна</option>
+                <option value="market">Страна1</option>
+                <option value="equipment">Страна2</option>
+                <option value="services">Страна3</option>
+              </select>
+              <label class="new-form__field-title visually-hidden" for="new-form__country">Выберите страну</label>
+            </p>
+            <p class="new-form__block new-form__block--region">
+              <select class="new-form__field" id="new-form__region" name="region">
+                <option value="">Регион</option>
+                <option value="Minsk">Регион1</option>
+                <option value="Moscow">Регион2</option>
+                <option value="Kiev">Регион3</option>
+              </select>
+              <label class="new-form__field-title visually-hidden" for="new-form__region">Выберите регион</label>
+            </p>
+          </div>
+          <div class="new-form__block-wrapper">
+            <p class="new-form__block new-form__block--city">
+              <select class="new-form__field" id="new-form__city" name="city">
+                <option value="">Город</option>
+                <option value="Minsk">Город1</option>
+                <option value="Moscow">Город2</option>
+                <option value="Kiev">Город3</option>
+              </select>
+              <label class="new-form__field-title visually-hidden" for="new-form__city">Выберите город</label>
+            </p>
+            <p class="new-form__block new-form__block--address">
+              <input class="new-form__field" id="new-form__address" name="address" type="text" placeholder="Адрес">
+              <label class="new-form__field-title visually-hidden" for="new-form__address">Введите свой адрес</label>
+            </p>
+          </div>
+        </fieldset>
+        <p class="new-form__block new-form__block--submit">
+          <button class="btn" type="submit">Опубликовать объявление</button>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+    </div>
+  </main>
+
+  <footer class="page-footer">
+  <div class="container">
+    <div class="page-footer__logo logo">
+      <a class="logo__link" href="index.html">
+        <img src="img/content/header-logo.png" alt="Логотип компании (Две головы лошадей)">
+      </a>
+    </div>
+
+    <div class="page-footer__socials">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a href="#" class="socials__link" aria-label="facebook"></a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link" aria-label="twitter"></a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link" aria-label="vkontakte"></a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link" aria-label="google+"></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="page-footer__developed">
+      <p><a href="http://east-tech.by/"><img src="img/content/east-tech-logo.png" alt="Логотип компании 'Восточные технологии'">Восточные технологии</a><span> - разработка и дизайн</span> </p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<![endif]-->
+  <!--[if lt IE 9]>
+  	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+  <![endif]-->
+
+
+  <title>Войти</title>
+
+
+  <link href="styles/main.css" rel="stylesheet">
+</head>
+
+<body class="page-login">
+  <header class="page-header">
+  <div class="container">
+    <div class="page-header__logo logo">
+      <a class="logo__link" href="index.html">
+        <img src="img/content/header-logo.png" alt="Логотип компании (Две головы лошадей)">
+      </a>
+    </div>
+
+    <a href="#" class="menu__toggle" aria-label="Показать/скрыть мобильное меню">Меню</a>
+
+    <div class="page-header__menu menu">      
+      <div class="menu__nav">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link active" href="index.html">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="news.html">Конный мир</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">Объявления</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="new.html">Подать объявление</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="menu__search">
+        <div class="menu-form__wrap">
+          <form class="menu-form">
+            <p class="menu-form__block">
+              <input class="menu-form__field" id="menu-search" name="search" type="search" placeholder="Поиск...">
+              <label class="menu-form__title visually-hidden" for="menu-search">Поиск по сайту</label>
+
+              <button class="menu-form__submit" aria-label="Искать">
+              </button>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="menu__login menu-login">
+        <a class="menu-login__link" href="login.html">Войти</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <main class="page-content">
+    <div class="container">
+      <section class="section breadcrumb">
+        <h2 class="visually-hidden">Хлебные крошки сайта</h2>
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__item">
+            <a href="index.html" class="breadcrumb__link breadcrumb__link--home" aria-label="Главная"></a>
+          </li>
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link">Войти</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section login">
+  <h1 class="section__title section__title--no-img">Войти</h1>
+  <div class="section__content">
+    <div class="login__social-form">
+      <form class="social-form">
+        <p class="social-form__block">
+          <span>Через:</span>
+          <button class="social-form__submit social-form__submit--google" type="submit" aria-label="Войти через google+"></button>
+
+          <button class="social-form__submit social-form__submit--facebook" type="submit" aria-label="Войти через facebook"></button>
+
+          <button class="social-form__submit social-form__submit--linkedin" type="submit" aria-label="Войти через linkedin"></button>
+
+          <button class="social-form__submit social-form__submit--twitter" type="submit" aria-label="Войти через twitter"></button>
+
+          <button class="social-form__submit social-form__submit--odnoklassniki" type="submit" aria-label="Войти через odnoklassniki"></button>
+
+          <button class="social-form__submit social-form__submit--vkontakte" type="submit" aria-label="Войти через vkontakte"></button>
+
+          <button class="social-form__submit social-form__submit--instagram" type="submit" aria-label="Войти через instagram"></button>
+
+          <button class="social-form__submit social-form__submit--mail" type="submit" aria-label="Войти через mail"></button>
+        </p>
+      </form>
+    </div>
+
+    <b class="dividing">или</b>
+
+    <div class="login__form-login">
+      <form class="login-form">
+        <p class="login-form__block">
+          <input class="login-form__field" id="login-form__login" name="login" type="text" placeholder="Логин" required>
+          <label class="login-form__field-login visually-hidden" for="login-form__login">Введите свой логин</label>
+        </p>
+        <p class="login-form__block">
+          <input class="login-form__field" id="login-form__password" name="password" type="password" placeholder="Пароль" required>
+          <label class="login-form__field-password visually-hidden" for="login-form__password">Введите свой пароль</label>
+        </p>
+
+        <p class="login-form__block login-form__block--remember">
+          <input class="login-form__field" id="login-form__remember" name="remember" type="checkbox">
+          <label class="login-form__field-remember" for="login-form__remember">Запомнить меня</label>
+        </p>
+
+        <p class="login-form__block login-form__block--submit">
+          <button class="login-form__submit btn" type="submit">Войти в личный кабинет</button>
+        </p>
+
+        <p class="login-form__block login-form__block--more">
+          <a class="login-form__link login-form__link--recover" href="#">Восстановить пароль</a>
+          <a class="login-form__link login-form__link--register" href="register.html">Пройти регистрацию</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+    </div>
+  </main>
+
+  <footer class="page-footer">
+  <div class="container">
+    <div class="page-footer__logo logo">
+      <a class="logo__link" href="index.html">
+        <img src="img/content/header-logo.png" alt="Логотип компании (Две головы лошадей)">
+      </a>
+    </div>
+
+    <div class="page-footer__socials">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a href="#" class="socials__link" aria-label="facebook"></a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link" aria-label="twitter"></a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link" aria-label="vkontakte"></a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link" aria-label="google+"></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="page-footer__developed">
+      <p><a href="http://east-tech.by/"><img src="img/content/east-tech-logo.png" alt="Логотип компании 'Восточные технологии'">Восточные технологии</a><span> - разработка и дизайн</span> </p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
